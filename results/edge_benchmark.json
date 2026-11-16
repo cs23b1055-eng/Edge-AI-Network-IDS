@@ -1,0 +1,32 @@
+{
+ "offline_during_run": true,
+ "cpu_count": 12,
+ "single_flow_pipeline_ms": {
+  "description": "preprocess + binary MLP + multiclass MLP (C++ via ctypes), batch=1",
+  "mean": 0.04780950899112213,
+  "p50": 0.04496299993661523,
+  "p95": 0.06068949992368288,
+  "p99": 0.08843520020036522
+ },
+ "throughput_batch1_flows_per_s": 20738.924391951492,
+ "throughput_batch64_flows_per_s": 148270.3250787629,
+ "throughput_batch1024_flows_per_s": 144566.27990908586,
+ "packet_path_synthetic_mixed": {
+  "packets": 1688,
+  "flows": 739,
+  "pcap_parse_and_flow_s": 0.21710273500002586,
+  "feature_extraction_s": 0.09217075300011857,
+  "inference_s": 0.005695064000065031,
+  "packets_per_s_end_to_end": 5359.2652005425525,
+  "feature_extraction_ms_per_flow": 0.12472361705022811,
+  "inference_ms_per_flow_batched": 0.007706446549479067,
+  "note": "most time is scapy PCAP decoding; live capture rate is bounded by scapy, not by the MLP"
+ },
+ "cpu_seconds_user+sys_total": 3.1199999999999997,
+ "rss_mb_start": 64.3828125,
+ "rss_mb_end": 81.265625,
+ "model_size_bytes": {
+  "binary": 23476,
+  "multiclass": 24136
+ }
+}

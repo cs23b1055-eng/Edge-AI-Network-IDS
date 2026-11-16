@@ -1,0 +1,8 @@
+numpy>=1.26,<2
+pandas>=2.1
+psutil
+scikit-learn      # baseline model only; the neural network itself is pure C++
+scapy>=2.5
+streamlit>=1.40
+pyarrow<18        # must be NumPy-1 compatible
+pytest

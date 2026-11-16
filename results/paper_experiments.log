@@ -1,0 +1,15 @@
+A0_linear_zscore 0.84491 24s
+A1_+log1p 0.93267 20s
+A2_+hidden64 0.9947 38s
+A3_+hidden32(64-32) 0.99485 61s
+A4_+class_weights(final) 0.99457 43s
+all57 0.99457
+no_port 0.99262
+no_port_no_tcp_state 0.99053
+LOFO DoS 0.3345
+LOFO DDoS 0.6006
+LOFO PortScan 0.0054
+LOFO Brute Force 0.2136
+LOFO Web Attack 0.0166
+LOFO Bot 0.0
+DONE

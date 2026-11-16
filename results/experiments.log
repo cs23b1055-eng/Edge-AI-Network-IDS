@@ -1,0 +1,24 @@
+/usr/lib/python3/dist-packages/sklearn/linear_model/_logistic.py:469: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+baselines done
+hidden_32 {'val_macro_f1': 0.99635, 'test_accuracy': 0.99804, 'test_f1': 0.99425, 'test_fpr': 0.00121, 'test_fnr': 0.00562}
+hidden_64,32 {'val_macro_f1': 0.99662, 'test_accuracy': 0.99823, 'test_f1': 0.99481, 'test_fpr': 0.00119, 'test_fnr': 0.0046}
+hidden_128,64 {'val_macro_f1': 0.99682, 'test_accuracy': 0.99836, 'test_f1': 0.99519, 'test_fpr': 0.00137, 'test_fnr': 0.00299}
+hidden_128,64,32 {'val_macro_f1': 0.99642, 'test_accuracy': 0.99815, 'test_f1': 0.99457, 'test_fpr': 0.0015, 'test_fnr': 0.00357}
+lr_0.0003 {'val_macro_f1': 0.99661, 'test_accuracy': 0.99815, 'test_f1': 0.99458, 'test_fpr': 0.00115, 'test_fnr': 0.00524}
+lr_0.003 {'val_macro_f1': 0.99667, 'test_accuracy': 0.99822, 'test_f1': 0.99478, 'test_fpr': 0.001, 'test_fnr': 0.00556}
+lr_0.01 {'val_macro_f1': 0.99642, 'test_accuracy': 0.99803, 'test_f1': 0.99423, 'test_fpr': 0.00107, 'test_fnr': 0.00634}
+batch_64 {'val_macro_f1': 0.99642, 'test_accuracy': 0.99807, 'test_f1': 0.99434, 'test_fpr': 0.00136, 'test_fnr': 0.0047}
+batch_1024 {'val_macro_f1': 0.99677, 'test_accuracy': 0.99825, 'test_f1': 0.99485, 'test_fpr': 0.00115, 'test_fnr': 0.0047}
+opt_sgd_momentum_lr0.05 {'val_macro_f1': 0.99665, 'test_accuracy': 0.99825, 'test_f1': 0.99486, 'test_fpr': 0.00113, 'test_fnr': 0.00481}
+cw_power_0 {'val_macro_f1': 0.99678, 'test_accuracy': 0.99809, 'test_f1': 0.99438, 'test_fpr': 0.0009, 'test_fnr': 0.00686}
+cw_power_1 {'val_macro_f1': 0.99585, 'test_accuracy': 0.99793, 'test_f1': 0.99396, 'test_fpr': 0.00205, 'test_fnr': 0.00213}
+features_no_dest_port {'val_macro_f1': 0.9954, 'test_accuracy': 0.99751, 'test_f1': 0.99271, 'test_fpr': 0.00179, 'test_fnr': 0.00589}
+features_no_port_no_tcp_state {'val_macro_f1': 0.99454, 'test_accuracy': 0.99693, 'test_f1': 0.99099, 'test_fpr': 0.00199, 'test_fnr': 0.00836}
+holdout {'trained_without': ['PortScan', 'DDoS'], 'attack_recall_on_family_in_test': {'PortScan': 0.006606474344857961, 'DDoS': 0.3835017185709822, 'DoS Hulk': 0.9997300111852508, 'FTP-Patator': 1.0}, 'benign_fpr': 0.0010769903424507799, 'note': 'PortScan/DDoS recall is for families never seen in training; others were seen'}

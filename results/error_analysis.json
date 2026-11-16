@@ -1,0 +1,190 @@
+{
+ "false_negatives_by_label": {
+  "Bot": {
+   "n": 293,
+   "missed": 86,
+   "miss_rate": 0.2935153583617747
+  },
+  "DDoS": {
+   "n": 19202,
+   "missed": 11,
+   "miss_rate": 0.0005728569940631184
+  },
+  "DoS GoldenEye": {
+   "n": 1542,
+   "missed": 2,
+   "miss_rate": 0.0012970168612191958
+  },
+  "DoS Hulk": {
+   "n": 25927,
+   "missed": 145,
+   "miss_rate": 0.005592625448374282
+  },
+  "DoS Slowhttptest": {
+   "n": 784,
+   "missed": 0,
+   "miss_rate": 0.0
+  },
+  "DoS slowloris": {
+   "n": 805,
+   "missed": 2,
+   "miss_rate": 0.002484472049689441
+  },
+  "FTP-Patator": {
+   "n": 890,
+   "missed": 0,
+   "miss_rate": 0.0
+  },
+  "Heartbleed": {
+   "n": 2,
+   "missed": 0,
+   "miss_rate": 0.0
+  },
+  "Infiltration": {
+   "n": 5,
+   "missed": 1,
+   "miss_rate": 0.2
+  },
+  "PortScan": {
+   "n": 13623,
+   "missed": 3,
+   "miss_rate": 0.00022021581149526536
+  },
+  "SSH-Patator": {
+   "n": 483,
+   "missed": 1,
+   "miss_rate": 0.002070393374741201
+  },
+  "Web Attack - Brute Force": {
+   "n": 220,
+   "missed": 1,
+   "miss_rate": 0.004545454545454545
+  },
+  "Web Attack - Sql Injection": {
+   "n": 3,
+   "missed": 0,
+   "miss_rate": 0.0
+  },
+  "Web Attack - XSS": {
+   "n": 98,
+   "missed": 1,
+   "miss_rate": 0.01020408163265306
+  }
+ },
+ "false_positives": 371,
+ "conf_of_errors": {
+  "fn_mean_p_attack": 0.34793800115585327,
+  "fp_mean_p_attack": 0.8445465564727783,
+  "fn_p_attack_below_0.1": 0.06719367588932806
+ },
+ "top_multiclass_confusions": [
+  {
+   "count": 347,
+   "true": "BENIGN",
+   "pred": "DoS"
+  },
+  {
+   "count": 170,
+   "true": "BENIGN",
+   "pred": "PortScan"
+  },
+  {
+   "count": 105,
+   "true": "BENIGN",
+   "pred": "Bot"
+  },
+  {
+   "count": 92,
+   "true": "Bot",
+   "pred": "BENIGN"
+  },
+  {
+   "count": 80,
+   "true": "DoS",
+   "pred": "BENIGN"
+  },
+  {
+   "count": 58,
+   "true": "BENIGN",
+   "pred": "Brute Force"
+  }
+ ],
+ "feature_profiles": {
+  "Bot": {
+   "missed_median": {
+    "Flow Duration": 40.5,
+    "Total Fwd Packets": 1.0,
+    "Total Backward Packets": 1.0,
+    "Total Length of Fwd Packets": 6.0,
+    "Flow Packets/s": 49390.2421875,
+    "SYN Flag Count": 0.0,
+    "PSH Flag Count": 0.0,
+    "Init_Win_bytes_forward": 237.0
+   },
+   "detected_median": {
+    "Flow Duration": 98171.0,
+    "Total Fwd Packets": 4.0,
+    "Total Backward Packets": 3.0,
+    "Total Length of Fwd Packets": 206.0,
+    "Flow Packets/s": 72.49903869628906,
+    "SYN Flag Count": 0.0,
+    "PSH Flag Count": 1.0,
+    "Init_Win_bytes_forward": 8192.0
+   }
+  },
+  "DDoS": {
+   "missed_median": {
+    "Flow Duration": 4545385.0,
+    "Total Fwd Packets": 2.0,
+    "Total Backward Packets": 0.0,
+    "Total Length of Fwd Packets": 12.0,
+    "Flow Packets/s": 0.8503379821777344,
+    "SYN Flag Count": 0.0,
+    "PSH Flag Count": 0.0,
+    "Init_Win_bytes_forward": 256.0
+   },
+   "detected_median": {
+    "Flow Duration": 1867160.0,
+    "Total Fwd Packets": 4.0,
+    "Total Backward Packets": 4.0,
+    "Total Length of Fwd Packets": 26.0,
+    "Flow Packets/s": 2.7517552375793457,
+    "SYN Flag Count": 0.0,
+    "PSH Flag Count": 0.0,
+    "Init_Win_bytes_forward": 256.0
+   }
+  },
+  "DoS Hulk": {
+   "missed_median": {
+    "Flow Duration": 503.0,
+    "Total Fwd Packets": 2.0,
+    "Total Backward Packets": 0.0,
+    "Total Length of Fwd Packets": 0.0,
+    "Flow Packets/s": 3976.14306640625,
+    "SYN Flag Count": 0.0,
+    "PSH Flag Count": 0.0,
+    "Init_Win_bytes_forward": 274.0
+   },
+   "detected_median": {
+    "Flow Duration": 86450672.0,
+    "Total Fwd Packets": 6.0,
+    "Total Backward Packets": 6.0,
+    "Total Length of Fwd Packets": 354.0,
+    "Flow Packets/s": 0.14891475439071655,
+    "SYN Flag Count": 0.0,
+    "PSH Flag Count": 0.0,
+    "Init_Win_bytes_forward": 251.0
+   }
+  },
+  "BENIGN_median": {
+   "Flow Duration": 46197.5,
+   "Total Fwd Packets": 2.0,
+   "Total Backward Packets": 2.0,
+   "Total Length of Fwd Packets": 68.0,
+   "Flow Packets/s": 84.59521484375,
+   "SYN Flag Count": 0.0,
+   "PSH Flag Count": 0.0,
+   "Init_Win_bytes_forward": 122.0
+  }
+ }
+}

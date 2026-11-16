@@ -1,0 +1,24 @@
+# environment / build output (recreate with ./run.sh setup and ./run.sh build)
+.venv/
+build/
+__pycache__/
+.pytest_cache/
+*.pyc
+
+# large generated data (recreate with ./run.sh data)
+datasets/processed/
+
+# runtime output
+results/live_state.json
+results/alerts.jsonl
+results/monitor_stderr.log
+results/*.tmp
+
+# the original dataset lives outside this folder, never commit it
+../MachineLearningCVE/
+*.csv
+results/tmp_models/
+
+# research paper kept out of the repository (submitted separately)
+documentation/Research_Paper.*
+documentation/build_paper.py
